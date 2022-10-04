@@ -23,5 +23,10 @@ puts "Creating roles..."
 # * and a role belongs to an actor.                         *
 # ***********************************************************
 # Create Roles Here
+superman = Role.create(salary:1000, character_name:"Clark Kent", actor_id:1, movie_id:2)
+sheldon = Role.create(salary:200, character_name:"Sheldon Cooper", actor_id:3,movie_id:1)
+madea = Role.create(salary:45000, character_name: "Mabel Madea", actor_id:4, movie_id:2)
+the_queen = Role.create(salary:37090, character_name:"Beyonce Knowles", actor_id:5, movie_id:1)
+mkurugenzi = Role.create(salary:10000, character_name:"Joho Sonko", actor_id:2, movie_id:2)
 
 puts "Seeding done!"
