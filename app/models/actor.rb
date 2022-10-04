@@ -9,5 +9,11 @@ class Actor < ActiveRecord::Base
         end
         total
     end
+
+    def blockbusters
+        self.movies.filter do |movie|
+            movie.box_office_earnings > 50000000
+        end
+    end
     
 end
