@@ -15,5 +15,12 @@ class Actor < ActiveRecord::Base
             movie.box_office_earnings > 50000000
         end
     end
+
+    def self.most_successful
+        self.all.map do |actor|
+            earnings = actor.total_salary
+            earnings.to_i.sort
+        end
+    end
     
 end
