@@ -13,5 +13,7 @@ class Movie < ActiveRecord::Base
     end
 
     def fire_actor(actor:)
+        get_actor = Role.find(actor.id)
+        get_actor.destroy
     end
 end
